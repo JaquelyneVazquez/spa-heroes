@@ -4,20 +4,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-
   constructor(
-    private router: Router
-  ){}
-  ngOnInit() {
+    private router: Router,
+    ) {}
+  ngOnInit() {}
 
+  buscarHeroe(terminino: string) {
+    this.router.navigate(['/buscar', terminino]);
+    //console.log('terminino', terminino);
   }
-
- buscarHeroe(terminino: string){
-this.router
-console.log('terminino', terminino);
-
- }
 }
