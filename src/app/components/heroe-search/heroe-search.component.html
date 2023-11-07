@@ -10,8 +10,9 @@
   </div>
 </div>
 
-<div class="row row-cols-2 row-cols-md-3 g-4">
+<app-heroe-tarjeta [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroes;"></app-heroe-tarjeta>
 
+<!-- <div class="row row-cols-2 row-cols-md-3 g-4">
   <div class="card col animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
     <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
     <div class="card-body">
@@ -19,7 +20,7 @@
       <p class="card-text">{{heroe.bio}}</p>
       <p><small class="text-body-secondary">{{heroe.aparicion}}</small></p>
     </div>
-    <button type="button" class="btn btn-outline-primary m-2">Ver más...</button>
-    <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary m-2">Ver más link....</a> -->
+    <button type="button" class="btn btn-outline-danger m-2">Regresar</button>
+
   </div>
-</div>
+</div> -->
